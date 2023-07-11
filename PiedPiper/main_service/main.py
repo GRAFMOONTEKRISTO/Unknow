@@ -11,7 +11,6 @@ app = FastAPI(
     title='PiedPiper'
 )
 
-
 app.include_router(
     fastapi_users.get_auth_router(auth_backend),
     prefix="/auth",
@@ -23,12 +22,6 @@ app.include_router(
     prefix="/auth",
     tags=["Auth"],
 )
-
-# все подключенные роутеры
-# app.include_router(router_operation)
-# app.include_router(router_tasks)
-# app.include_router(router_pages)
-
 
 # @app.on_event("startup")
 # async def startup():

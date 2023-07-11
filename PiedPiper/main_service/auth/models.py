@@ -24,7 +24,8 @@ user = Table(
     Column("username", String, nullable=False),
     Column("hashed_password", String, nullable=False),
     Column("registered_at", TIMESTAMP, default=datetime.utcnow),
-    Column("role_id", Integer, ForeignKey(role.c.id)),  # внешний ключ на табличку с полями
+    Column("role_id", Integer, ForeignKey(role.c.id)),
+    # внешний ключ на табличку с полями (пользователь является User or Admin)
     Column("is_active", Boolean, default=True, nullable=False),
     Column("is_superuser", Boolean, default=False, nullable=False),
     Column("is_verified", Boolean, default=False, nullable=False),

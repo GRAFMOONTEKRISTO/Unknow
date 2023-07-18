@@ -16,6 +16,8 @@ alembic = "^1.11.1"
 requests = "^2.31.0"
 beautifulsoup4 = "^4.12.2"
 lxml = "^4.9.3"
+python-telegram-bot = "^20.4"
+html-parser = "^0.2"
 
 
 [build-system]

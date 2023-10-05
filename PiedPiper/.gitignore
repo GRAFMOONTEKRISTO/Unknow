@@ -1,8 +1,0 @@
-*poetry.lock
-/notebooks/.ipynb_checkpoints/
-*logs
-*.log
-*.env
-.idea
-
-

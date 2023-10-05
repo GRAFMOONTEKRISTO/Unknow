@@ -1,0 +1,12 @@
+*poetry.lock
+/notebooks/.ipynb_checkpoints/
+*logs
+*.log
+*.env
+*media
+/model_service/model_checkpoints
+/nginx/cert
+/rabbitmq
+/streamlit_service/auth.yaml
+
+.idea
